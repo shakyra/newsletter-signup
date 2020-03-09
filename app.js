@@ -60,8 +60,8 @@ app.post("/failure", function(req, res) {
   res.redirect("/"); // redirect failure button to sign up page
 });
 
-app.listen(process.env.PORT, function() {
-  console.log("Listening on port 3000!")
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Listening...")
 });
 
 //API Key
