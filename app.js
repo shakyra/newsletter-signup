@@ -36,7 +36,7 @@ app.post("/", function(req, res) {
   const url = "https://us19.api.mailchimp.com/3.0/lists/645378c5c5"; // endpoints are at mailchimp.com/developer
   const options = { //find options keys and values in the node.js docs + mailchimp.com/developer
     method: "POST",
-    auth: "shakyra:31133d413b3cfb102150d85d706f9ed9a-us19"
+    auth: "shakyra:1133d413b3cfb102150d85d706f9ed9a-us19"
   };
 
   const request = https.request(url, options, function(response) {
@@ -63,6 +63,3 @@ app.post("/failure", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
   console.log("Listening...")
 });
-
-//Audience id
-//645378c5c5
